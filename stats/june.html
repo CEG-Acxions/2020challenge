@@ -16,34 +16,6 @@
   <h1>June Month Statistics</h1>
 <div id="wrapper">
 
-  <div id="stack">
-      <canvas id="doughnut-chart1" width="50" height="50"></canvas>
-  <script>
-
-  new Chart(document.getElementById("doughnut-chart1"), {
-      type: 'doughnut',
-      data: {
-        labels: ["Book", "Movie"],
-        datasets: [
-          {
-            label: "Count",
-            backgroundColor: ["#faac58", "#6e6e6e"],
-            data: [48,61]
-          }
-        ]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Book Movie Ratio',
-          maintainAspectRatio: true
-        }
-      }
-  });
-</script>
-</div>
-
-
   <div id="stack1">
       <canvas id="chart1" width="50" height="50"></canvas>
       <script>
@@ -71,8 +43,90 @@
     </script>
 </div>
 
+ <div id="stack3">
+      <canvas id="chart" width="50" height="50"></canvas>
+      <script>
+
+      new Chart(document.getElementById("chart"), {
+          type: 'doughnut',
+          data: {
+            labels: ["Male", "Female"],
+            datasets: [
+              {
+                label: "No. of Movies",
+                backgroundColor: ["#58ACFA", "#f784a8"],
+                data: [75,89]
+              }
+            ]
+          },
+          options: {
+            title: {
+              display: true,
+              text: 'Movie Watch Ratio',
+              maintainAspectRatio: true
+            }
+          }
+      });
+    </script>
+</div>
+
+  
+  <div id="stack">
+      <canvas id="doughnut-chart1" width="50" height="50"></canvas>
+  <script>
+
+  new Chart(document.getElementById("doughnut-chart1"), {
+      type: 'doughnut',
+      data: {
+        labels: ["Book", "Movie"],
+        datasets: [
+          {
+            label: "Count",
+            backgroundColor: ["#faac58", "#6e6e6e"],
+            data: [48,61]
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Book Movie Ratio',
+          maintainAspectRatio: true
+        }
+      }
+  });
+</script>
+</div>
+
+  <div id="stack2">
+      <canvas id="doughnut-chart" width="50" height="50"></canvas>
+  <script>
+
+  new Chart(document.getElementById("doughnut-chart"), {
+      type: 'doughnut',
+      data: {
+        labels: ["English", "Tamil"],
+        datasets: [
+          {
+            label: "No. of Books",
+            backgroundColor: ["#3e95cd", "#8e5ea2"],
+            data: [60,23]
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Books Language Ratio',
+          maintainAspectRatio: true
+        }
+      }
+  });
+</script>
+</div>
 
 
+  
 <div id="stack4">
     <canvas id="chart5" width="50" height="50"></canvas>
     <script>
@@ -104,60 +158,8 @@
 
 
 
-  <div id="stack2">
-      <canvas id="doughnut-chart" width="50" height="50"></canvas>
-  <script>
 
-  new Chart(document.getElementById("doughnut-chart"), {
-      type: 'doughnut',
-      data: {
-        labels: ["English", "Tamil"],
-        datasets: [
-          {
-            label: "No. of Books",
-            backgroundColor: ["#3e95cd", "#8e5ea2"],
-            data: [60,23]
-          }
-        ]
-      },
-      options: {
-        title: {
-          display: true,
-          text: 'Books Language Ratio',
-          maintainAspectRatio: true
-        }
-      }
-  });
-</script>
-</div>
-
-
-  <div id="stack3">
-      <canvas id="chart" width="50" height="50"></canvas>
-      <script>
-
-      new Chart(document.getElementById("chart"), {
-          type: 'doughnut',
-          data: {
-            labels: ["Male", "Female"],
-            datasets: [
-              {
-                label: "No. of Movies",
-                backgroundColor: ["#58ACFA", "#f784a8"],
-                data: [75,89]
-              }
-            ]
-          },
-          options: {
-            title: {
-              display: true,
-              text: 'Movie Watch Ratio',
-              maintainAspectRatio: true
-            }
-          }
-      });
-    </script>
-</div>
+ 
 
 
 
