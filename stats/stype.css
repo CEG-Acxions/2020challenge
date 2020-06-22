@@ -1,0 +1,10 @@
+h1 {text-align: center;}
+
+#wrapper {
+    width: 1000px;
+    height: 600px;
+  
+    display:grid;
+    grid-template-columns: 50% 50%;
+grid-gap:1em;
+    }
