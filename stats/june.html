@@ -126,7 +126,7 @@
 </div>
 
 
-  
+<!--   
 <div id="stack4">
     <canvas id="chart5" width="50" height="50"></canvas>
     <script>
@@ -153,7 +153,34 @@
     });
   </script>
 </div>
+ -->
+  
+<div id="stack4">
+    <canvas id="chart5" width="50" height="50"></canvas>
+    <script>
 
+    new Chart(document.getElementById("chart5"), {
+        type: 'bar',
+        data: {
+          labels: ["Action", "Adventure", "Animation", "Comedy", "Crime/Gangster", "Drama"],
+          datasets: [
+            {
+              label: "No. of Movies",
+              backgroundColor: ["rgba(255,99,132,0.2", "#8e5ea2", "#fe5ea2", "#8c5ea2", "#8e5ef2", "#885ea2"],
+              data: [48,61,45,56,34,32]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Movie Genre Ratio',
+            maintainAspectRatio: true
+          }
+        }
+    });
+  </script>
+</div>
 
 
 
