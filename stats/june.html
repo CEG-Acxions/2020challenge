@@ -27,7 +27,9 @@
             datasets: [
               {
                 label: "No. of Books",
-                backgroundColor: ["#58ACFA", "#f784a8"],
+                backgroundColor: ["rgb(88, 172, 250, 0.3)", "rgb(247, 132, 168, 0.3)"],
+                borderColor: ["rgb(88, 172, 250)", "rgb(247, 132, 168)"],
+                borderWidth: 1,
                 data: [48,61]
               }
             ]
@@ -54,7 +56,9 @@
             datasets: [
               {
                 label: "No. of Movies",
-                backgroundColor: ["#58ACFA", "#f784a8"],
+                backgroundColor: ["rgb(88, 172, 250, 0.3)", "rgb(247, 132, 168, 0.3)"],
+                borderColor: ["rgb(88, 172, 250)", "rgb(247, 132, 168)"],
+                borderWidth: 1,
                 data: [75,89]
               }
             ]
@@ -109,7 +113,9 @@
         datasets: [
           {
             label: "No. of Books",
-            backgroundColor: ["#3e95cd", "#8e5ea2"],
+            backgroundColor: ["rgb(62, 149, 205,0,3)", "rgb(62, 149, 205,0,3)",],
+            borderColor: ["rgb(62, 149, 205)", "rgb(62, 149, 205)",]
+            borderWidth:1,
             data: [60,23]
           }
         ]
@@ -124,36 +130,6 @@
   });
 </script>
 </div>
-
-
-<!--   
-<div id="stack4">
-    <canvas id="chart5" width="50" height="50"></canvas>
-    <script>
-
-    new Chart(document.getElementById("chart5"), {
-        type: 'doughnut',
-        data: {
-          labels: ["Action", "Adventure", "Animation", "Comedy", "Crime/Gangster", "Documentary", "Drama", "Fantasy", "Horror", "Musical", "Romance", "Sci-Fi", "Thriller", "War"],
-          datasets: [
-            {
-              label: "No. of Movies",
-              backgroundColor: ["#3e95cd", "#8e5ea2", "#fe5ea2", "#8c5ea2", "#8e5ef2", "#885ea2"],
-              data: [48,61,45,56,34,32]
-            }
-          ]
-        },
-        options: {
-          title: {
-            display: true,
-            text: 'Movie Genre Ratio',
-            maintainAspectRatio: true
-          }
-        }
-    });
-  </script>
-</div>
- -->
   
 <div id="stack4">
     <canvas id="chart5" width="50" height="50"></canvas>
