@@ -1,0 +1,223 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>20-20  September Stats</title>
+  <meta name="description" content="Monthly Statistics of 20-20 Challenge">
+  <meta name="author" content="SitePoint">
+<link rel="stylesheet" type="text/css" media="all" href="stype.css" />
+  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+</head>
+
+<body>
+  <h1 style="font-family:verdana">September Month Statistics</h1>
+<div id="wrapper">
+
+  <div id="stack1">
+      <canvas id="chart1" width="50" height="50"></canvas>
+      <script>
+
+      new Chart(document.getElementById("chart1"), {
+          type: 'doughnut',
+          data: {
+            labels: ["Male", "Female"],
+            datasets: [
+              {
+                label: "No. of Books",
+                backgroundColor: ["rgb(88, 172, 250, 0.5)", "rgb(247, 132, 168, 0.5)"],
+                borderColor: ["rgb(88, 172, 250)", "rgb(247, 132, 168)"],
+                borderWidth: 1,
+                data: [22,49]
+              }
+            ]
+          },
+          options: {
+            title: {
+              display: true,
+              text: 'Book Read Ratio',
+              fontSize: 28,
+              fontStyle: 'bold',
+              maintainAspectRatio: true
+            }
+          }
+      });
+    </script>
+</div>
+
+ <div id="stack3">
+      <canvas id="chart" width="50" height="50"></canvas>
+      <script>
+
+      new Chart(document.getElementById("chart"), {
+          type: 'doughnut',
+          data: {
+            labels: ["Male", "Female"],
+            datasets: [
+              {
+                label: "No. of Movies",
+                backgroundColor: ["rgb(88, 172, 250, 0.5)", "rgb(247, 132, 168, 0.5)"],
+                borderColor: ["rgb(88, 172, 250)", "rgb(247, 132, 168)"],
+                borderWidth: 1,
+                data: [22,53]
+              }
+            ]
+          },
+          options: {
+            title: {
+              display: true,
+              text: 'Movie Watch Ratio',
+              fontSize: 28,
+              fontStyle: 'bold',
+              maintainAspectRatio: true
+            }
+          }
+      });
+    </script>
+</div>
+
+  
+  <div id="stack">
+      <canvas id="doughnut-chart1" width="50" height="50"></canvas>
+  <script>
+
+  new Chart(document.getElementById("doughnut-chart1"), {
+      type: 'doughnut',
+      data: {
+        labels: ["Book", "Movie"],
+        datasets: [
+          {
+            label: "Count",
+            backgroundColor: ["rgb(250, 172, 88, 0.5)", "rgb(110, 110, 110, 0.5)"],
+            borderColor: ["rgb(250, 172, 88)", "rgb(110, 110, 110)"],
+            borderWidth: 1,
+            data: [86,54]
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Book Movie Ratio',
+          fontSize: 28,
+          fontStyle: 'bold',
+          maintainAspectRatio: true
+        }
+        }
+       });
+</script>
+</div>
+
+  <div id="stack2">
+      <canvas id="doughnut-chart" width="50" height="50"></canvas>
+  <script>
+
+  new Chart(document.getElementById("doughnut-chart"), {
+      type: 'doughnut',
+      data: {
+        labels: ["English", "Tamil"],
+        datasets: [
+          {
+            label: "No. of Books",
+            backgroundColor: ["rgb(202, 3, 252, 0.3)", "rgba(52, 235, 128,0.4)",],
+            borderColor: ["rgb(202, 3, 252)", "rgba(52, 235, 128)"],
+            borderWidth:1,
+            data: [45,10]
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Books Language Ratio',
+          fontSize: 28,
+          fontStyle: 'bold',
+          maintainAspectRatio: true
+        }
+      }
+  });
+</script>
+</div>
+  
+<div id="stack4">
+    <canvas id="chart5" width="50" height="50"></canvas>
+    <script>
+
+    new Chart(document.getElementById("chart5"), {
+        type: 'bar',
+        data: {
+          labels: ["Action", "Animation", "Comedy", "Documentary", "Drama", "Horror", "Romance", "Sci-Fi", "Thriller"],
+//           
+          datasets: [
+            {
+              fill: false,
+              backgroundColor: ["rgba(255,99,132,0.3)", "rgba(255,159,64,0.3)", "rgba(255,205,86,0.3)", "rgba(75,192,192,0.3)", "rgba(54,162,235,0.3)", "rgba(153,102,255,0.3)", "rgba(102, 250, 255,0.3)",  "rgba(52, 235, 128,0.3)",  "rgba(99,99,99,0.3)"],
+              borderColor: ["rgba(255,99,132)", "rgba(255,159,64)", "rgba(255,205,86)", "rgba(75,192,192)", "rgba(54,162,235)", "rgba(153,102,255)", "rgba(102, 250, 255)", "rgba(52, 235, 128)",  "rgba(99,99,99)"],
+              data: [5,1,16,13,19,1,3,3,5],
+              borderWidth: 1,
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Movie Genre Chart',
+            fontSize: 28,
+            fontStyle: 'bold',
+            maintainAspectRatio: true
+          },
+          legend: {
+            display: false,
+          }
+        }
+    });
+  </script>
+</div>
+
+
+
+
+
+ 
+
+
+<div id="stack5">
+    <canvas id="chart6" width="50" height="50"></canvas>
+    <script>
+
+    new Chart(document.getElementById("chart6"), {
+        type: 'bar',
+        data: {
+          labels: ["Assanese", "English", "Hindi", "Japanese", "Malayalam", "Nepali", "Spanish", "Tamil", "Urdu"],
+          datasets: [
+            {
+              fill: false,
+              backgroundColor: ["rgba(255,99,132,0.3)", "rgba(255,159,64,0.3)", "rgba(255,205,86,0.3)", "rgba(75,192,192,0.3)", "rgba(54,162,235,0.3)", "rgba(153,102,255,0.3)", "rgba(102, 250, 255,0.3)",  "rgba(52, 235, 128,0.3)",  "rgba(99,99,99,0.3)" ],
+              borderColor: ["rgba(255,99,132)", "rgba(255,159,64)", "rgba(255,205,86)", "rgba(75,192,192)", "rgba(54,162,235)", "rgba(153,102,255)", "rgba(102, 250, 255)", "rgba(52, 235, 128)",  "rgba(99,99,99)" ],
+              data: [1,49,3,1,13,1,1,5,1],
+              borderWidth: 1,
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Movie Diversity Chart',
+            fontSize: 28,
+              fontStyle: 'bold',
+            maintainAspectRatio: true
+          },
+          legend: {
+            display: false,
+          }
+        }
+    });
+  </script>
+</div>
+
+</div>
+</body>
+</html>
+
