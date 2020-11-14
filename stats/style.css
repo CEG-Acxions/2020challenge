@@ -22,7 +22,7 @@ label.logo{
 }
 nav ul{
  float: right;
-  margin-right: 20px;
+ margin-right: 20px;
 }
 nav ul li{
  display: inline-block;
@@ -32,4 +32,6 @@ nav ul li{
 }
 nav ul li a{
   color: white;
+  font-size: 17px;
+  text-transform: uppercase;
 }
